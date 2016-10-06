@@ -40,7 +40,7 @@ public class main {
             frecuenciaChar[caracter]++;
         
         // se manda a crear el arbol
-        arbol = func.buildTree(frecuenciaChar);
+        arbol = func.construirArbol(frecuenciaChar);
         
         // obtencion del codigo
         System.out.println("Tabla de frecuencias");
