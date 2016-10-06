@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
 class FuncionesHuffman{
     
 	// funcion que determina el arbol a usar 
-    public  ArbolHuffman  buildTree(int[] frecuenciasChar) {
+    public  ArbolHuffman  construirArbol(int[] frecuenciasChar) {
     	
         PriorityQueue<ArbolHuffman> foresta = new PriorityQueue<ArbolHuffman>();
         //Crea las frecuencias para cada letra.
