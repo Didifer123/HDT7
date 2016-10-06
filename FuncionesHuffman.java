@@ -18,13 +18,13 @@ class FuncionesHuffman{
     public  ArbolHuffman  buildTree(int[] frecuenciasChar) {
     	
         PriorityQueue<ArbolHuffman> foresta = new PriorityQueue<ArbolHuffman>();
-        // Criar as Folhas da �rvore para cada letra 
+        //Crea las frecuencias para cada letra.
         for (int cont = 0; cont < frecuenciasChar.length; cont++){
             if (frecuenciasChar[cont] > 0)
-                foresta.offer(new Hoja(frecuenciasChar[cont], (char)cont)); // Inser os elementos, n� folha, na fila de prioridade
+                foresta.offer(new Hoja(frecuenciasChar[cont], (char)cont)); //Inserta a los elementos de acuerdo a la prioridad de las frecuencias.
         }
-        // Percorre todos os elementos da fila
-        // Criando a �rvore bin�ria de baixo para cima
+        //Recorre todos los elementos de la fila.
+        //Crea un arbol binario de abajo hacia arriba.
         while (foresta.size() > 1) {
             // nodos con menor frecuencia
             ArbolHuffman  a = foresta.poll(); 
